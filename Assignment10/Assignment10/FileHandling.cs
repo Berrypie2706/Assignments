@@ -15,18 +15,18 @@ namespace Assignment10
 
             try
             {
-                //Console.WriteLine("Enter file path");
-                //string Path = Console.ReadLine();
-                //string fPath = Path + fileName;
 
-                if (File.Exists(fileName))
+                string Path = "D:\\";
+                string fPath = Path + fileName;
+
+                if (File.Exists(fPath))
                 {
-                    Console.WriteLine("File Already there");
+                    Console.WriteLine("File Already there!!!");
                 }
 
                 else
                 {
-                    StreamWriter streamWriter = File.AppendText(fileName);
+                    StreamWriter streamWriter = File.AppendText(fPath);
                     streamWriter.WriteLine(content);
                     streamWriter.Dispose();
                     streamWriter.Close();
@@ -43,10 +43,13 @@ namespace Assignment10
         {
             try
             {
-                
-                if(File.Exists(fileName))
+
+                string Path = "D:\\";
+                string fPath = Path + fileName;
+
+                if (File.Exists(fPath))
                 {
-                    string[] lines = File.ReadAllLines(fileName);
+                    string[] lines = File.ReadAllLines(fPath);
                     foreach(string line in lines)
                     {
                         Console.WriteLine(line);
@@ -65,17 +68,28 @@ namespace Assignment10
         public void AppendToFile(string fileName,string content)
         {
             try
-            {
+            {   
 
-                StreamReader sr = new StreamReader(content);
-                string text = "";
-                while((text = sr.ReadLine())!=null)
-                {
-                    Console.WriteLine(text);
-                }               
+                string Path = "D:\\";
+                string fPath = Path + fileName;
+                StreamWriter streamWriter = File.AppendText(fPath);
+                streamWriter.WriteLine(content);
+                streamWriter.Dispose();
+                streamWriter.Close();
+                Console.WriteLine(content);
+                Console.WriteLine("Content is added");
+
+                //StreamReader sr = new StreamReader(fileName);
+                // content = "";
+                //while((content = sr.ReadLine())!=null)
+                //{
+                //    Console.WriteLine(content);
+                //}
+                //sr.Close();
             }
             catch (Exception ex)
             {
+
                 Console.WriteLine($"Error while Appending the file: {ex.Message}");
 
             }
@@ -84,9 +98,11 @@ namespace Assignment10
         {
             try
             {
-                if (File.Exists(fileName))
+                string Path = "D:\\";
+                string fPath = Path + fileName;
+                if (File.Exists(fPath))
                 {
-                    File.Delete(fileName); Console.WriteLine("File is deleted successfully");
+                    File.Delete(fPath); Console.WriteLine("File is deleted successfully");
                 }
                 else
                 {
