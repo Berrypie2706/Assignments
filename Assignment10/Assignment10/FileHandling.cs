@@ -67,17 +67,25 @@ namespace Assignment10
         }
         public void AppendToFile(string fileName,string content)
         {
+            
             try
             {   
 
                 string Path = "D:\\";
                 string fPath = Path + fileName;
-                StreamWriter streamWriter = File.AppendText(fPath);
-                streamWriter.WriteLine(content);
-                streamWriter.Dispose();
-                streamWriter.Close();
-                Console.WriteLine(content);
-                Console.WriteLine("Content is added");
+                if (File.Exists(fPath))
+                {
+                    StreamWriter streamWriter = File.AppendText(fPath);
+                    streamWriter.WriteLine(content);
+                    streamWriter.Dispose();
+                    streamWriter.Close();
+                    Console.WriteLine(content);
+                    Console.WriteLine("Content is added");
+                }
+                else
+                {
+                    Console.WriteLine("File not exists");
+                }
 
                 //StreamReader sr = new StreamReader(fileName);
                 // content = "";
