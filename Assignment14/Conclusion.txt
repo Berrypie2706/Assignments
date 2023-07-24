@@ -1,0 +1,164 @@
+Random Array:
+132
+104
+302
+407
+186
+123
+448
+470
+385
+412
+
+
+After Bubble sort
+104
+123
+132
+186
+302
+385
+407
+412
+448
+470
+
+
+Is sortedArray sorted after applying bubble sort? True
+ArraySize 10 Time Taken 0.3316 milliseconds
+________________________________________________________________________________________________-
+After Insertion sort
+104
+123
+132
+186
+302
+385
+407
+412
+448
+470
+
+
+Is sortedArray sorted after applying insertion sort? True
+ArraySize 10 Time Taken 0.2172 milliseconds
+
+_____________________________________________________________________________________________________________________________
+
+
+Random Array:
+496
+297
+145
+344
+173
+406
+316
+138
+209
+433
+
+
+After Bubble sort
+138
+145
+173
+209
+297
+316
+344
+406
+433
+496
+
+
+Is sortedArray sorted after applying bubble sort? True
+ArraySize 10 Time Taken 0.1452 milliseconds
+________________________________________________________________________________________________-
+After Insertion sort
+138
+145
+173
+209
+297
+316
+344
+406
+433
+496
+
+
+Is sortedArray sorted after applying insertion sort? True
+ArraySize 10 Time Taken 0.1032 milliseconds
+
+________________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+Random Array:
+486
+421
+146
+273
+168
+461
+128
+480
+355
+336
+
+
+After Bubble sort
+128
+146
+168
+273
+336
+355
+421
+461
+480
+486
+
+
+Is sortedArray sorted after applying bubble sort? True
+ArraySize 10 Time Taken 0.149 milliseconds
+________________________________________________________________________________________________-
+After Insertion sort
+128
+146
+168
+273
+336
+355
+421
+461
+480
+486
+
+
+Is sortedArray sorted after applying insertion sort? True
+ArraySize 10 Time Taken 0.1184 milliseconds
+
+______________________________________________________________________________________________________________________________________________________________________-
+
+Conclusion:--------->>>>>>
+
+Bubble sort------>>>>>>>
+
+1.It has an average time complexity of O(n^2), where "n" is the number of elements in the array.
+
+2.Bubble sort repeatedly compares adjacent elements and swaps them if they are in the wrong order, moving the largest element to its correct position at the end of the array in each pass.
+
+3.While bubble sort is easy to implement, it is not efficient for large arrays due to its quadratic time complexity.
+
+Selection Sort------->>>>>
+
+1.It has an average time complexity of O(n^2) for the traditional implementation, but it can achieve an O(n) time complexity in its best case (already sorted array).
+
+2.Insertion sort works by dividing the array into two parts: a sorted left part and an unsorted right part. It picks elements from the unsorted part one by one and inserts them into their correct positions in the sorted part.
+
+3.For small arrays or partially sorted arrays, insertion sort performs much better than bubble sort.
+
+
