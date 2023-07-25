@@ -17,7 +17,7 @@ namespace Assignment14
             for (int i = 0; i < n - 1; i++)
             {
                 swapped = false;
-                for (int j = 0; j < n - 1 ; j++)
+                for (int j = 0; j < n - 1-1 ; j++)
                 {
                     if (arr[j] > arr[j + 1])
                     {
@@ -75,28 +75,21 @@ namespace Assignment14
                     }
                     Console.WriteLine("\n");
                 }
-            public static bool IsArraySorted(int[] array,int[] sortedArray)
+        static bool IsArraySorted(int[] arr)
+        {
+            for (int i = 0; i < arr.Length - 1; i++)
             {
-            sortedArray = (int[])array.Clone();
-            if (array == null || array.Length <= 1)
-                {
-                    return true;
-                }
-
-            for (int i = 0; i < array.Length; i++)
-            {
-                if (array[i] != sortedArray[i])
+                if (arr[i] > arr[i + 1])
                 {
                     return false;
                 }
             }
-
             return true;
-            }        
+        }
 
-       
-   
-           static void Main(string[] args)
+
+
+        static void Main(string[] args)
         {
                 
             int arrayLength = 10;
@@ -105,33 +98,34 @@ namespace Assignment14
 
             int[] randomArray = GenerateRandomIntArray(arrayLength, minValue, maxValue);
             int[] sortedArray1 = (int[])randomArray.Clone();
+            int[] sortedArray2 = (int[])randomArray.Clone();
 
             Console.WriteLine("Random Array:");            
-            Print(randomArray);
+            Print(sortedArray1);
             //Bubble sorting
             Stopwatch sw = new Stopwatch();
             sw.Start();
-            BubleSort(randomArray);
+            BubleSort(sortedArray1);
             sw.Stop();
             Console.WriteLine("After Bubble sort");        
-            Print(randomArray);
-            Console.WriteLine("Is sortedArray sorted after applying bubble sort? " + IsArraySorted(randomArray, sortedArray1));
-            Console.WriteLine($"ArraySize {randomArray.Length} Time Taken {sw.Elapsed.TotalMilliseconds} milliseconds");
+            Print(sortedArray1);
+            Console.WriteLine("Is sortedArray sorted after applying bubble sort? " + IsArraySorted(sortedArray1));
+            Console.WriteLine($"ArraySize {sortedArray1.Length} Time Taken {sw.Elapsed.TotalMilliseconds} milliseconds");
 
             Console.WriteLine("________________________________________________________________________________________________-");
 
             //Insertion sorting
             Stopwatch sw1 = new Stopwatch();
             sw1.Start();
-            Insertion(randomArray);
+            Insertion(sortedArray2);
             sw1.Stop();
             
-            Insertion(randomArray);
+            Insertion(sortedArray2);
             Console.WriteLine("After Insertion sort");
-            Print(randomArray);
+            Print(sortedArray2);
             
-            Console.WriteLine("Is sortedArray sorted after applying insertion sort? " + IsArraySorted(randomArray, sortedArray1));
-            Console.WriteLine($"ArraySize {randomArray.Length} Time Taken {sw1.Elapsed.TotalMilliseconds} milliseconds");
+            Console.WriteLine("Is sortedArray sorted after applying insertion sort? " + IsArraySorted(sortedArray2));
+            Console.WriteLine($"ArraySize {sortedArray2.Length} Time Taken {sw1.Elapsed.TotalMilliseconds} milliseconds");
 
             Console.ReadKey();
 
