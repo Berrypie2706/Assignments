@@ -1,0 +1,8 @@
+D:\Assignments\Assignment17\Assignment17\obj\Debug\Assignment17.csproj.AssemblyReference.cache
+D:\Assignments\Assignment17\Assignment17\obj\Debug\Assignment17.csproj.SuggestedBindingRedirects.cache
+D:\Assignments\Assignment17\Assignment17\obj\Debug\Assignment17.csproj.CoreCompileInputs.cache
+D:\Assignments\Assignment17\Assignment17\bin\Debug\Assignment17.exe.config
+D:\Assignments\Assignment17\Assignment17\bin\Debug\Assignment17.exe
+D:\Assignments\Assignment17\Assignment17\bin\Debug\Assignment17.pdb
+D:\Assignments\Assignment17\Assignment17\obj\Debug\Assignment17.exe
+D:\Assignments\Assignment17\Assignment17\obj\Debug\Assignment17.pdb
