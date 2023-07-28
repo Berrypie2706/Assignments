@@ -1,0 +1,8 @@
+D:\Assignments\Assignment18\Assignment18\bin\Debug\Assignment18.exe.config
+D:\Assignments\Assignment18\Assignment18\bin\Debug\Assignment18.exe
+D:\Assignments\Assignment18\Assignment18\bin\Debug\Assignment18.pdb
+D:\Assignments\Assignment18\Assignment18\obj\Debug\Assignment18.csproj.AssemblyReference.cache
+D:\Assignments\Assignment18\Assignment18\obj\Debug\Assignment18.csproj.SuggestedBindingRedirects.cache
+D:\Assignments\Assignment18\Assignment18\obj\Debug\Assignment18.csproj.CoreCompileInputs.cache
+D:\Assignments\Assignment18\Assignment18\obj\Debug\Assignment18.exe
+D:\Assignments\Assignment18\Assignment18\obj\Debug\Assignment18.pdb
