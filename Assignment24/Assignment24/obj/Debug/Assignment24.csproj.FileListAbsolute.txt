@@ -1,0 +1,8 @@
+D:\Assignments\Assignment24\Assignment24\bin\Debug\Assignment24.exe.config
+D:\Assignments\Assignment24\Assignment24\bin\Debug\Assignment24.exe
+D:\Assignments\Assignment24\Assignment24\bin\Debug\Assignment24.pdb
+D:\Assignments\Assignment24\Assignment24\obj\Debug\Assignment24.csproj.AssemblyReference.cache
+D:\Assignments\Assignment24\Assignment24\obj\Debug\Assignment24.csproj.SuggestedBindingRedirects.cache
+D:\Assignments\Assignment24\Assignment24\obj\Debug\Assignment24.csproj.CoreCompileInputs.cache
+D:\Assignments\Assignment24\Assignment24\obj\Debug\Assignment24.exe
+D:\Assignments\Assignment24\Assignment24\obj\Debug\Assignment24.pdb
